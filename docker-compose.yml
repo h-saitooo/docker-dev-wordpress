@@ -40,7 +40,7 @@ services:
     env_file: .env
     volumes:
       - ./db/local:/var/lib/mysql
-      - ./db/initialize:/docker-entrypoint-initdb.d/initial.sql
+      - ./db/initialize:/docker-entrypoint-initdb.d
     networks:
       - back
 
